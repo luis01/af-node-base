@@ -5,7 +5,7 @@
 <title>Socket</title>
 <script src="/socket.io/socket.io.js"></script>
 <script type="text/javascript">
-  var socket = io.connect("http://127.0.0.1:2000");
+  var socket = io.connect("http://appfog.com:2000");
 	var c = document.getElementById('m');
 	socket.on('users', function(data){
 		c.innerHTML = "Hay: "+data.number;	
